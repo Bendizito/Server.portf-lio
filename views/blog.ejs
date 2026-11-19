@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Bendizito</title>
+    <link rel="stylesheet" href="Blog/blog.css">
+</head>
+<body>
+
+    <div id="container">
+        <input id="container" type="submit" value="Criar Post">
+    </div>
+
+    <% for(let i =0; i<items.length; i++) { %> 
+        
+        <div>
+            <p>Titulo:<%= items[i].db_titulo%></p>
+            <p>Resumo <%= items[i].db_resumo%></p>
+            <p>Conteúdo: <%= items[i].db_conteudo></p>
+        </div>    
+        
+    <% }%>
+
+</body>
+</html>
